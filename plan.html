@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Mobile plan</title>
+</head>
+
+<body>
+    <header>
+        <div id="header_content">
+            <a href="./index.html">
+                <img class="header_back_icon" src="./Icons/back_icon.svg" alt="Back icon">
+            </a>
+            <img id="header_image" src="./Images/Header/mobile_plan.svg" alt="Mobile plan">
+            <a href="./menu.html">
+                <img class="header_icon" src="./Icons/menu_icon.svg" alt="Menu icon">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section id="plan">
+            <!-- Intro tekst -->
+            <div class="intro">
+                <h3>The details</h3>
+                <p> Here you can find more details of your
+                    selected mobile plan. Customize your
+                    plan to your preferences! </p>
+            </div>
+
+            <div class="info_container_plan">
+                <!-- Container om het logo en de tekst naast elkaar te zetten. -->
+                <div class="provider_info">
+                    <img class="logo" src="./Images/Logos/2ELET_logo.svg" alt="2 Elet logo">
+                    <p class="provider_text"> 2 Elet offers
+                        you the best bang for your buck,
+                        their mobile plans are the cheapest
+                        and offer the most data. </p>
+                </div>
+
+                <!-- Container om de individuele support info onder elkaar te zetten. -->
+                <div class="contact_info">
+                    <img class="contact_icon" src="./Icons/phone_icon.svg" alt="Phone icon">
+                    <b class="contact_info_data">0800 1234</b>
+                    <img class="contact_icon" src="./Icons/site_icon.svg" alt="Site icon">
+                    <a class="contact_info_data" href="https://www.2elet.nl/"><b>www.2elet.nl</b> (dutch)</a>
+                </div>
+            </div>
+
+            <!-- Voor de raio buttons. 
+                 Containers om flexbox correct te laten werken.
+            -->
+            <div class="choices_container">
+                <h4>Data</h4>
+                <div class="choice_container">
+                    <div class="data_container">
+                        <input id="2.5GB" type="radio" name="data">
+                        <label class="choice_label" for="2.5GB"><b>2.5GB</b> data</label>
+                    </div>
+                    <p>$5.50</p>
+                </div>
+                <div id="selected" class="choice_container">
+                    <div class="data_container">
+                        <input checked="checked" id="7.5GB" type="radio" name="data">
+                        <label class="choice_label" for="7.5GB"><b>7.5GB</b> data</label>
+                    </div>
+                    <p>$7.50</p>
+                </div>
+                <div class="choice_container">
+                    <div class="data_container">
+                        <input id="10.5GB" type="radio" name="data">
+                        <label class="choice_label" for="10.5GB"><b>10.5GB</b> data</label>
+                    </div>
+                    <p>$9.00</p>
+                </div>
+            </div>
+
+            <div class="choices_container">
+                <h4>Call minutes</h4>
+                <div id="selected" class="choice_container">
+                    <div class="data_container">
+                        <input checked="checked" id="100" type="radio" name="minutes">
+                        <label class="choice_label" for="100"><b>100</b> call minutes</label>
+                    </div>
+                    <p>$3.50</p>
+                </div>
+                <div class="choice_container">
+                    <div class="data_container">
+                        <input id="Unlimited" type="radio" name="minutes">
+                        <label class="choice_label" for="Unlimited"><b>Unlimited</b> call minutes</label>
+                    </div>
+                    <p>$4.50</p>
+                </div>
+            </div>
+
+            <div class="choices_container">
+                <h4>Minimal subscription time</h4>
+                <div id="selected" class="choice_container">
+                    <div class="data_container">
+                        <input checked="checked" id="1month" type="radio" name="time">
+                        <label class="choice_label" for="1month"><b>1</b> month</label>
+                    </div>
+                    <p>$1.50</p>
+                </div>
+                <div class="choice_container">
+                    <div class="data_container">
+                        <input id="6months" type="radio" name="time">
+                        <label class="choice_label" for="6months"><b>6</b> months</label>
+                    </div>
+                    <p>$1.00</p>
+                </div>
+                <div class="choice_container">
+                    <div class="data_container">
+                        <input id="1year" type="radio" name="time">
+                        <label class="choice_label" for="1year"><b>1</b> year</label>
+                    </div>
+                    <p>$0.50</p>
+                </div>
+            </div>
+
+            <!-- Div voor totaalbedrag van het abonnement. -->
+            <div class="total">
+                <div>
+                    <p><b>Total costs:</b><br>*All costs inculde taxes</p>
+                </div>
+                <div>
+                    <p><b>$12.50</b><br>per month</p>
+                </div>
+            </div>
+
+            <!-- Div voor de order en compare knoppen. -->
+            <div class="buttons">
+                <a id="gray" href="./compare.html">
+                    <b>Compare</b>
+                </a>
+                <a href="./order.html">
+                    <b>Order plan</b>
+                </a>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer met copyright. -->
+
+    <footer>
+        <p>Copyright 2020 Stein Bergergervoet</p>
+    </footer>
+</body>
+
+</html>

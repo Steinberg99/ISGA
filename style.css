@@ -1,0 +1,329 @@
+@font-face { 
+    font-family: avenir;
+    src: url(./Fonts/Avenir.ttc);
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: avenir;
+}
+
+header { 
+    width: 100%;
+    height: 55px;
+    background-color: #1A1A1A;
+}
+
+main { 
+    width: 90%;
+    margin: 0 auto;
+}
+
+#header_content { 
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;   
+}
+
+#header_image { 
+    height: 18px;
+    margin: auto 0;
+    margin-top: 37.1px;
+}
+
+#menu_main { 
+    background-color: #1A1A1A;
+    padding: 1.5em 0;
+    width: 100%;
+}
+
+ul.navigation {
+    width: 90%; 
+    margin: 0 auto;
+    list-style-type: none;
+    text-align: right;
+}
+
+ul.navigation > li { 
+    margin: 0.1em 0;
+}
+
+.menu_header { 
+    height: 18px;
+    width: auto;
+}
+
+.header_back_icon { 
+    width: 31px;
+    height: auto;
+    padding-top: 17.25px;
+}
+
+.header_close_icon { 
+    width: 31px;
+    height: auto;
+    padding-top: 15px;
+}
+
+.header_icon { 
+    width: 31px;
+    height: auto;
+    padding-top: 19.24px;
+}
+
+.dummy { 
+    width: 31px;
+}
+
+.intro { 
+    margin: 0.75em auto 0.5em auto;
+}
+
+.info_container, .info_container_plan { 
+    margin: 0 auto;
+    border-top: 1px solid #B7B7B7;
+}
+
+.info_container_plan { 
+    border-bottom: 1px solid #B7B7B7;
+}
+
+.choices_container { 
+    width: 95%;
+    margin: 0.5em auto;
+}
+
+.data_container { 
+    display: flex;
+    align-items: center;
+}
+
+.data_container > input { 
+    margin: 0.3em 0.5em;
+    width: 20px;
+    height: 20px;
+}
+
+.choice_container > p { 
+    margin: 0 0.5em;
+}
+
+.choice_container { 
+    align-items: center;
+    background-color: #EBE9E9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin: 0.5em 0;
+}
+
+#selected { 
+    background-color: #FF2E2E;
+}
+
+.logo { 
+    width: 65px;
+    height: auto;
+}
+
+.plan_info, .provider_info { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 0.5em auto;
+}
+
+.plan_icon { 
+    width: 17.5px;
+    height: 17.5px;
+    margin-left: 1em;
+}
+
+.contact_info { 
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    width: 95%;
+    margin: 0.5em auto;
+}
+
+.contact_info_data { 
+    margin: 0 0.5em;
+}
+
+.contact_icon { 
+    width: 20px;
+    height: 20px;
+}
+
+.support_info { 
+    width: 95%;
+    margin: 0.5em auto;
+    font-size: 14px;
+}
+
+.support_info_container { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.5em 0;
+}
+
+.provider_text { 
+    width: 70%;
+}
+
+a { 
+    text-decoration: none;
+}
+
+a:link { 
+    color: black;
+}
+
+a:visited { 
+    color: black;
+}
+
+.total { 
+    border-top: 1px solid #B7B7B7;
+    margin: 1em auto 0.5em auto;
+    padding: 0.5em 2.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buttons { 
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buttons > a { 
+    background-color: #FF2E2E;
+    padding: 0.3em 0.5em;
+    border-radius: 5px;
+    color: white;
+}
+
+.buttons > a#gray { 
+    background-color: #EBE9E9;
+    color: black;
+}
+
+form { 
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #B7B7B7;
+    padding: 0 2.5%;
+}
+
+input[type=text], input[type=email], input[type=date] { 
+    font-family: avenir;
+    font-size: 16px;
+    width: 100%;
+    height: 40px;
+    background-color: #EBE9E9;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 20px;
+}
+
+input[type=text]:focus { 
+    border: 1px solid #B7B7B7;
+}
+
+.voornaam_tussenvoegsel > input { 
+    width: 47.5%;
+}
+
+.voornaam_tussenvoegsel { 
+    height: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+select { 
+    font-family: avenir;
+    font-size: 16px;
+    width: 100%;
+    height: 40px;
+    background-color: #EBE9E9;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 20px;
+}
+
+label {
+    font-size: 18.72px;
+    font-weight: bold;
+}
+
+label.thin { 
+    font-size: 16px;
+    font-weight: normal;
+}
+
+input[type=submit] { 
+    width: 25%;
+    background-color: #FF2E2E;
+    padding: 0.3em 0.5em;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-family: avenir;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input[type=submit]#order { 
+    width: 32%;
+}
+
+select:focus { 
+    border: 1p solid #B7B7B7;
+}
+
+.form_element { 
+    margin: 0.5em 0;
+}
+
+.radio_buttons { 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    width: 20%;
+}
+
+.radio_buttons > input { 
+    margin: 0.3em 0.5em;
+    width: 20px;
+    height: 20px;
+}
+
+footer { 
+    background-color: #1A1A1A;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    margin-top: 1em;
+}

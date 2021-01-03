@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Finalizing Order</title>
+</head>
+
+<body>
+    <header>
+        <div id="header_content">
+            <a href="./filter.html">
+                <img class="header_back_icon" src="./Icons/back_icon.svg" alt="Back icon">
+            </a>
+            <img id="header_image" src="./Images/Header/finalizing_order.svg" alt="Mobile Providers">
+            <a href="./menu.html">
+                <img class="header_icon" src="./Icons/menu_icon.svg" alt="Menu icon">
+            </a>
+        </div>
+    </header>
+
+    <!-- 
+        Form voor het invullen van de benodigde informatie.
+        Voornaam (input text)
+        Tussenvoegsel (input text)
+        Achternaam (input text)
+        E-mail (input email)
+        Geboortedatum (input date)
+        Ingangdatum van abonnement (input date)
+        Bankgegevens (input text)
+        Bestel knop (input submit)
+    -->
+
+    <main>
+        <div class="intro">
+            <h3>You’re almost there</h3>
+            <p> fill in the required data and order your mobile
+                plan. You will receive a confirmation of your
+                order through email.  Your selected provider will 
+                send you a list of possible stores where you can 
+                pick up your sim card. </p>
+        </div>
+
+        <section>
+            <form action="./index.html">
+                <div class="form_element">
+                    <div class="voornaam_tussenvoegsel">
+                        <label for="voornaam">First name</label>
+                        <input id="voornaam" type="text" name="voornaam">
+                        <label for="tussenvoegsel">Insertion</label>
+                        <input id="tussenvoegsel" type="text" name="tussenvoegsel">
+                    </div>
+                </div>
+
+                <div class="form_element">
+                    <label for="achternaam">Last name</label>
+                    <input type="text" name="achernaam" id="achternaam">
+                </div>
+
+                <div class="form_element">
+                    <label for="email">Email address</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div class="form_element">
+                    <label for="birthday">Birthday</label>
+                    <input type="date" name="birthday" id="birthday">
+                </div>
+
+                <div class="form_element">
+                    <label for="start_date">Plan start date</label>
+                    <input type="date" name="start_date" id="start_date">
+                </div>
+
+                <div class="form_element">
+                    <label for="bank">Bank details</label>
+                    <input type="text" name="bank" id="bank">
+                </div>
+
+                <div class="form_element">
+                    <input id="order" type="submit" value="Order plan"> 
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer met copyright. -->
+    <footer>
+        <p>Copyright 2020 Stein Bergergervoet</p>
+    </footer>
+</body>
+
+</html>

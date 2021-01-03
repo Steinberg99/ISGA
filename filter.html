@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Filter</title>
+</head>
+
+<body>
+    <header>
+        <div id="header_content">
+            <a href="./filter.html">
+                <img class="header_back_icon" src="./Icons/back_icon.svg" alt="Back icon">
+            </a>
+            <img id="header_image" src="./Images/Header/filter.svg" alt="Mobile Providers">
+            <a href="./menu.html">
+                <img class="header_icon" src="./Icons/menu_icon.svg" alt="Menu icon">
+            </a>
+        </div>
+    </header>
+
+    <!-- Form voor het invullen van de benodigde informatie. 
+         Info: 
+            - Data (input text)
+            - Bel minuten (drop down box)
+            - Englese customer service (checkboxes)
+            - Internationale bankpas (checkboxes)
+            - Minimal subscription time (drop down box)
+            - Prijs (input text)  
+        En op het einde nog een zoek knop. 
+    -->
+
+    <main>
+        <section>
+            <div class="intro">
+                <h3>So what are you looking for</h3>
+                <p> Use the filter below to find mobile plans that
+                    fit your criteria. A Dutch mobile plan consists
+                    of an amount of data and calling minutes. This plan
+                    needs to be paid monthly. </p>
+            </div>
+
+            <form action="./index.html">
+
+                <div class="form_element">
+                    <label for="data">Data</label>
+                    <input type="text" name="data" id="data" value="... GB">
+                </div>
+
+                <div class="form_element">
+                    <label for="call_minutes">Call minutes</label>
+                    <select name="call_minutes" id="call_minutes">
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                        <option value="200">200</option>
+                        <option value="Unlimited">Unlimited</option>
+                    </select>
+                </div>
+
+                <div class="form_element">
+                    <label for="data">Price</label>
+                    <input type="text" name="data" id="data" value="$ ...">
+                </div>
+
+                <div class="form_element">
+                    <h3>English customer service</h3>
+                    <div class="radio_buttons">
+                        <input type="radio" name="service" id="service_yes">
+                        <label class="thin" for="service_yes">Yes</label>
+                        <input type="radio" name="service" id="service_no">
+                        <label class="thin" for="service_no">No</label>
+                    </div>
+                </div>
+
+                <div class="form_element">
+                    <h3>International bank account</h3>
+                    <div class="radio_buttons">
+                        <input type="radio" name="bank" id="bank_yes">
+                        <label class="thin" for="bank_yes">Yes</label>   
+                        <input type="radio" name="bank" id="bank_no">
+                        <label class="thin" for="bank_no">No</label>      
+                    </div>
+                </div>
+
+                <div class="form_element">
+                    <label for="time">Minimal subscription time</label>
+                    <select name="time" id="time">
+                        <option value="1month">1 month</option>
+                        <option value="6months">6 months</option>
+                        <option value="1year">1 year</option>
+                        <option value="2years">2 years</option>
+                    </select>
+                </div>
+
+                <div class="form_element">
+                    <input type="submit" value="Search">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer met copyright. -->
+    <footer>
+        <p>Copyright 2020 Stein Bergergervoet</p>
+    </footer>
+</body>
+
+</html>
